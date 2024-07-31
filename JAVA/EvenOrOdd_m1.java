@@ -18,7 +18,7 @@ public class evenorodd_m1
             }
 
         }
-        System.out.println("\nEven numbers:");
+        System.out.print("\nEven numbers:");
         for(int i=0;i<a.length;i++)
         {
             if(a[i]%2==0)
