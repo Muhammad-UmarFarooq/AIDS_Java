@@ -4,9 +4,9 @@ class MatrixAdd_m1
     {
         int a[][]={{1,3,4},{2,4,3},{3,4,5}};
         int b[][]={{1,3,4},{2,4,3},{1,2,4}};
-        // creating another matrix to store the sum of two matrix
+        // Creating another matrix to store the sum of two matrix
         int c[][]=new int[3][3];
-        // printing a matrix
+        // Printing a matrix
         System.out.println("A matrix is:");
         for(int i=0;i<3;i++)
         {
@@ -16,7 +16,7 @@ class MatrixAdd_m1
             }
             System.out.println();
         }
-        // printing b matrix
+        // Printing b matrix
         System.out.println("B matrix is:");
 
         for(int i=0;i<3;i++)
@@ -27,7 +27,7 @@ class MatrixAdd_m1
             }
             System.out.println();
         }
-        // adding and printing addition of 2 matrices
+        // Adding and printing addition of 2 matrices
         System.out.println("Addition of A and B matrices is:");
         for(int i=0;i<3;i++)
         {
