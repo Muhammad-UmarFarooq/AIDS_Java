@@ -27,7 +27,7 @@ class MatrixMul_m2
         // Matrix to store the result
         int C[][]=new int[MAX][MAX];
         
-        // check if multiplication is possible
+        // Check if multiplication is possible
        // To multiply any 2 matrices [no.of columns of 1st matrix == no.of rows of 2nd matrix]
         if(col1 != row2)
         {
@@ -35,14 +35,14 @@ class MatrixMul_m2
             return;
         }
         
-        // multiply the two matrices
+        // Multiply the two matrices
         // Resultant matrix size [no.of rows of 1st matrix and no.of columns of 2nd matrix]
         for(i=0;i<row1;i++)
         {
             for(j=0;j<col2;j++)
             {
                 C[i][j]=0;
-                // k value should be either no.of columns of 1st matrix (or) no.of rows of 2nd matrix
+                // K value should be either no.of columns of 1st matrix (or) no.of rows of 2nd matrix
                 for(k=0;k<=row2;k++)
                 {
                     C[i][j] += A[i][k] * B[k][j];
@@ -101,12 +101,12 @@ class MatrixMul_m2
             }
         }
         
-        // print the first matrix
+        // Print the first matrix
         System.out.println();
         System.out.println("First Matrix:");
         printMatrix(A,m1rowsize,m1colsize);
         
-         // print the Second matrix
+         // Print the Second matrix
         System.out.println();
         System.out.println("Second Matrix:");
         printMatrix(B,m2rowsize,m2colsize);
