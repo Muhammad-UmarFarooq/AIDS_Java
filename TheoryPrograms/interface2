@@ -1,0 +1,76 @@
+interface Vehicle{
+    // abstract methods
+    void changeGear(int a);
+    void speedUp(int a);
+    void applyBrakes(int a);
+}
+
+class Bicycle implements Vehicle{
+    int speed,gear;
+    public void changeGear(int newgear)
+    {
+        gear = newgear;
+    }
+    public void speedUp(int increment)
+    {
+        speed = speed+increment;
+    }
+    public void applyBrakes(int decrement)
+    {
+        speed = speed-decrement;
+    }
+    public void printStates()
+    {
+        System.out.println("speed : "+speed+" gear : "+gear);
+    }
+}
+
+class Bike implements Vehicle{
+    int speed,gear;
+    public void changeGear(int newgear)
+    {
+        gear = newgear;
+    }
+    public void speedUp(int increment)
+    {
+        speed = speed+increment;
+    }
+    public void applyBrakes(int decrement)
+    {
+        speed = speed-decrement;
+    }
+    public void printStates()
+    {
+        System.out.println("speed : "+speed+" gear : "+gear);
+    }
+}
+
+class Main{
+    public static void main(String argss[])
+    {
+        Bicycle b1=new Bicycle();
+        b1.changeGear(2);
+        b1.speedUp(3);
+        b1.applyBrakes(1);
+        System.out.println("Bicycle present state : ");
+        b1.printStates();
+        
+        Bike b2=new Bike();
+        b2.changeGear(2);
+        b2.speedUp(3);
+        b2.applyBrakes(1);
+        System.out.println("Bike present state : ");
+        b2.printStates();
+        
+    }
+
+/*showing error
+java -cp /tmp/xgYkPSHkl7/Bicycle
+ERROR!
+Error: Main method not found in class Bicycle, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+=== Code Exited With Errors ===
+    
+}
