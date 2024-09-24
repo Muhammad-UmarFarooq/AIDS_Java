@@ -1,0 +1,55 @@
+//interface2 + static method
+// interface 1
+interface API{
+    default void show()
+    {
+        System.out.println("Default API");
+    }
+    static void display()
+    {
+        System.out.println("this is static method1");
+    }
+     static void disp()
+    {
+        System.out.println("this is static method2");
+    }
+}
+// interface 2
+interface Interface1 extends API{
+    void display();
+}
+// interface 3
+interface Interface2 extends API{
+    void print();
+
+}
+//main class
+class Main implements Interface1,Interface2{
+    public void display()
+    {
+        System.out.println("Display from Interface1");
+    }
+    public void print()
+    {
+        System.out.println("Print from Interface2");
+    }
+    public static void main(String args[])
+    {
+        Main obj = new Main();
+        obj.show();
+        obj.display();
+        obj.print();
+        API.display();
+        API.disp();
+        
+    }
+}
+/*output
+java -cp /tmp/RVbtOeesQj/Main
+Default API
+Display from Interface1
+Print from Interface2
+this is static method1
+this is static method2
+
+=== Code Execution Successful ===*/
