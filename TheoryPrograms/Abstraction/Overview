@@ -1,7 +1,7 @@
 Abstract1  --  simple example
 Abstract2  --  another example
 Interface1  --  simple example
-Interface2  --  another example(empty)
+Interface2  --  another example
 Interface3  --  multiple interfaces,inheritance of interfaces 
 Interface4  --   interface inheritance ,static method
 
