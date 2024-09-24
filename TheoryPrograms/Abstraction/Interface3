@@ -1,0 +1,43 @@
+
+//multiple interfaces,inheritance of interfaces
+// interface 1
+interface API{
+    default void show()
+    {
+        System.out.println("Default API");
+    }
+}
+// interface 2
+interface Interface1 extends API{
+    void display();
+}
+// interface 3
+interface Interface2 extends API{
+    void print();
+}
+//main class
+class Main implements Interface1,Interface2{
+    public void display()
+    {
+        System.out.println("Display from Interface1");
+    }
+    public void print()
+    {
+        System.out.println("Print from Interface2");
+    }
+    public static void main(String args[])
+    {
+        Main obj = new Main();
+        obj.show();
+        obj.display();
+        obj.print();
+    }
+  
+}
+/*output
+java -cp /tmp/RXSKOYNPHD/Main
+Default API
+Display from Interface1
+Print from Interface2
+
+=== Code Execution Successful ===*/
