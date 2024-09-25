@@ -1,0 +1,22 @@
+// this can be used to invoke current class method
+class A{
+    void m(){System.out.println("This is m method");}
+    void n()
+    {
+        System.out.println("This is n method");
+        //m(); //is same as this.m();
+        this.m();
+    }
+}
+public class Sample{
+    public static void main(String args[])
+    {
+        A a=new A();
+        a.n();
+    }
+}
+/*
+output:
+This is n method
+This is m method
+*/
