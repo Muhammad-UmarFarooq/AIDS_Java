@@ -1,1 +1,4 @@
-
+This1  --  this can be used to refer current class instance variable
+This2  --  this is used to invoke current class method
+This3  --  this is used to invoke current class constructor
+This4  --  
