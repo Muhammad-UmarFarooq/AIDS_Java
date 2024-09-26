@@ -1,0 +1,38 @@
+// this can be used to pass an argument in the constructor call
+
+// here we will access class Two datamembers in class One 
+// to access we need object of Two class in One class (since they are non-static)
+// 1st we created a reference of class Two 
+class One{
+  Two t;
+  //constructor which takes parameter - object of class Two
+  One(Two t){
+    //we initialized reference var. t with class Two object 
+    this.t=t;    
+  }
+  //this method displays class Two data
+  void display()
+  {
+    System.out.println("date: "+t.date+"\nday: "+t.day);
+  }
+
+}
+
+
+// *** here we are creating 
+class Two{
+  int date=27;
+  String day="Friday";
+  Two()
+  {
+    
+  }
+}
+
+
+class Main{
+  public static void main(String args[])
+  {
+    Two t=new Two()
+  }
+}
