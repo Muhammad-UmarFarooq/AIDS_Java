@@ -40,3 +40,10 @@ class Main{
     Two t=new Two();
   }
 }
+
+/*
+Output:
+
+date: 27
+day: Friday
+*/
