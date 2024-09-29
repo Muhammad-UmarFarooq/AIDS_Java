@@ -1,4 +1,5 @@
 // this can be used to pass an argument in the constructor call
+// reference -- passing this as an argument in constructor call in hindi | code in java | youtube
 
 // here we will access class Two datamembers in class One 
 // to access we need object of Two class in One class (since they are non-static)
