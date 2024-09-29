@@ -3,6 +3,8 @@
 // here we will access class Two datamembers in class One 
 // to access we need object of Two class in One class (since they are non-static)
 // 1st we created a reference of class Two 
+// *** here we created Two class object
+// *** we are accessing Two class members from One class
 class One{
   Two t;
   //constructor which takes parameter - object of class Two
@@ -19,13 +21,15 @@ class One{
 }
 
 
-// *** here we are creating 
+// *** here we are creating One class object
+// *** we are accessing One class method from Two class 
 class Two{
   int date=27;
   String day="Friday";
   Two()
   {
-    
+    One one=new One(this);
+    one.display();
   }
 }
 
@@ -33,6 +37,6 @@ class Two{
 class Main{
   public static void main(String args[])
   {
-    Two t=new Two()
+    Two t=new Two();
   }
 }
