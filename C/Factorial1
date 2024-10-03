@@ -1,0 +1,57 @@
+// find out the factorial of n numbers using an array
+#include<stdio.h>
+//function to calculate the factorial
+int factorial(int num)
+{
+    int fact=1;
+for(int i=1;i<=num;i++)
+{
+fact *=i;
+}
+return fact;
+}
+//main function
+int main()
+{
+//n stores how many numbers user want to enter
+//array[n] stores the numbers entered by the user
+//factorials[n] stores the factorial value of each number of array[n]
+int n;
+printf("enter the no.of elements :\n");
+scanf("%d",&n);
+int array[n];
+int factorials[n];
+printf("enter %d numbers\n",n);
+//taking n numbers value from user
+for(int i=0;i<n;i++)
+{
+scanf("%d",&array[i]);
+}
+//calculate factorials and store in another array
+for(int i=0;i<n;i++)
+{
+factorials[i]=factorial(array[i]);
+}
+//output the factorials
+for(int i=0;i<n;i++)
+{
+printf("%d factorial is %d\n",array[i],factorials[i]);
+}
+}
+/*
+output
+enter the no.of elements :
+5
+enter 5 numbers
+1
+2
+3
+4
+5
+1 factorial is 1
+2 factorial is 2
+3 factorial is 6
+4 factorial is 24
+5 factorial is 120
+*/
+
