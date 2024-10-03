@@ -1,0 +1,28 @@
+//swap two numbers using pointers
+// swap 2 numbers using pointers
+#include<stdio.h>
+void Swap(int *p1,int *p2)
+{
+    int temp;
+    temp=*p1;
+    *p1=*p2;
+    *p2=temp;
+}
+int main()
+{
+    int num1,num2;
+    printf("enter two numbers:\n");
+    scanf("%d %d",&num1,&num2);
+    printf("before swapping the numbers are: num1= %d ,num2= %d\n",num1,num2);
+    //callind Swap function
+    Swap(&num1,&num2);
+    printf("after swapping the numbers are: num1= %d ,num2= %d\n",num1,num2);
+    return 0;
+}
+/*
+output
+enter two numbers:
+10 20
+before swapping the numbers are: num1= 10 ,num2= 20
+after swapping the numbers are: num1= 20 ,num2= 10
+*/
